@@ -1,7 +1,8 @@
 #hepHeader{
     background: linear-gradient(to right,#e2bdff,#c37aff 80%, #e2bdff);
-    height: 120px;
+    height: auto;
     border-bottom: 2px solid #6600bb;
+    align-items: top;
 }
 
 #hepLogo{
@@ -11,28 +12,28 @@
 }
 
 #hepLinkContainer{
-    float: left;
+    float: right;
     margin: 40px 40px;
 }
 
 .hepHeaderLink{
-    font-size: 25px;
-    margin: 0 60px;
+    font-size: 20px;
+    margin: 0 auto;
     transition: 0.2s;
 }
 
 .hepHeaderLink:hover{
     text-decoration: none !important;
     color: #fff;
-    font-size: 27px;
-    margin: 0 57px;
+    font-size: 22px;
+    margin: 0 auto;
     transition: 0.2s;
 }
 
 #hepWalletButton{
     float: right;
-    margin: 40px 40px;
-    width: 200px;
+    margin: 40px auto;
+    max-width: 200px;
     height: 50px;
     border-width: 3px;
     border-style: dashed;
@@ -42,10 +43,11 @@
 #hepMusicPlayer {
     position: fixed; 
     bottom: 0;
+    width: 100%;
     display: block;
     justify-content: space-between;
     align-items:center;
     background-color: #e2bdff;
-    color: rgb(0, 0, 0) !important; 
+    color: rgb(0, 0, 0);
   }
   
