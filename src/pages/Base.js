@@ -2,6 +2,7 @@ import React from 'react'
 import { Image, Link, Button, HStack ,StackDivider} from '@chakra-ui/react';
 import { Layout } from 'antd';
 import './Base.css'
+import Player from '../components/AudioPlayer'
 
 const { Content, Sider, Footer, Header } = Layout;
 
@@ -28,6 +29,9 @@ const Base = ({content}) => {
                     {content}
                 </Content>
             </Layout>
+            <Footer id="hepMusicPlayer">
+                <Player content={[{title:"asi",audio:"https://ipfs.moralis.io:2053/ipfs/QmaN3pSa4yE16XeJCnFp6YfaenxbdF5wbxXictwJesHf92",publicationId:"xd"}]}/>
+            </Footer>
         </Layout>
     )
 }
