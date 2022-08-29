@@ -1,12 +1,12 @@
-import ReactDOM from "react-dom";
-import React from "react";
+import {createRoot} from 'react-dom/client';
+import React,{StrictMode} from 'react';
+import { HashRouter } from 'react-router-dom';
+import App from './App'
 
-const App = () => {
-    return (
-        <h1>
-            Heptagon
-        </h1>
-    )
-}
-
-ReactDOM.render(<App/>, document.getElementById("app"))
+createRoot(document.getElementById("app")).render(
+    <StrictMode>
+        <HashRouter>
+            <App />
+        </HashRouter>
+    </StrictMode>
+);
